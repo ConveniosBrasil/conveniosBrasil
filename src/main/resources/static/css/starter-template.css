@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+div, li, a {
+	color: black !important;
+}
+
+.container {
+	flex: 1 0 auto;
+}
+
+.carousel {
+	margin-top: 5px;
+	box-shadow: 5px 5px 5px black;
+}
+
+.carousel img {
+	width: 100%;
+	height: 100%;
+}
+
+.planos-home, .menu-administrativo {
+	display: grid;
+}
+
+.flip-card {
+	background-color: transparent;
+	height: 200px;
+	width: 300px;
+	perspective: 1000px;
+	margin: 20px 0 80px 0;
+	float: left;
+	padding-left: 20px;
+}
+
+.flip-card-inner {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	margin-left: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	cursor: pointer;
+}
+
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 120%;
+	backface-visibility: hidden;
+	cursor: pointer;
+}
+
+.flip-card-front {
+	color: black;
+}
+
+.flip-card-front img {
+	width: 200px;
+}
+
+.flip-card-back {
+	background-color: dodgerblue;
+	color: white !important;
+	font-size: 20px;
+	border-radius: 30px;
+	transform: rotateY(180deg);
+	box-shadow: 5px 5px 5px #000;
+}
+
+.flip-card-back li {
+	cursor: pointer;
+}
+
+.saibamais {
+	text-decoration: underline;
+}
+
+.lista-footer {
+	margin-top: 0;
+}
+
+.anoAtualRodape {
+	color: black;
+	font-size: 15px;
+}
+
+.page-footer a:hover {
+	text-decoration: underline;
+	color: #0d47a1 !important;
+	font-weight: bold;
+}
+
+.whatsapp, .phone {
+	width: 40px;
+	position: relative;
+	top: 7px;
+	padding-left: 20px;
+}
+
+#voltarTopo {
+	width: 50px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 30px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+.card-image img {
+	margin-top: 20px;
+}
+
+iframe {
+	width: 100%;
+	height: 350px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 2px #000;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+/* centralizar o botão enviar do formulário de contato */
+.centralizado {
+	margin: 0 41%;
+}
+
+.paginalogin {
+	background: url(/img/conveniosbrasilDNA.png);
+	background-size: cover;
+	background-position: 20% 40%;
+}
+
+.paginalogin h4 {
+	color: white;
+	font-weight: bold;
+}
+
+.linklogin {
+	color: white !important;
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.linklogin:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.loginbtnmargin {
+	margin-left: 13px;
+}
+
+.containerlogin {
+	margin: 60px auto;
+}
+
+.opacity {
+  background: #000;
+  opacity: .9;
+  border-radius: 30px;
+}
+
+.logo {
+	width: 90px;
+	margin-left: 5px;
+}
+
+
+
+

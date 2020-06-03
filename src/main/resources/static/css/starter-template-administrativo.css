@@ -1,0 +1,600 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+table th, table td {
+	text-align: center;
+}
+
+.logoAdm {
+	width: 45px;
+	margin-left: -7px;
+}
+
+.container, .container-fluid {
+	flex: 1 0 auto;
+}
+
+.lista-footer {
+	margin-top: 0;
+}
+
+.page-footer a:hover {
+	text-decoration: underline;
+	color: #0d47a1 !important;
+	font-weight: bold;
+}
+
+.footer-dados, .horizontal {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.whatsapp, .phone {
+	width: 40px;
+	position: relative;
+	top: 7px;
+	padding-left: 20px;
+}
+
+#voltarTopo {
+	width: 50px;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 30px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* Menu lateral */
+.main-menu:hover, nav.main-menu.expanded {
+	width: 200px;
+	overflow-y: auto;
+	opacity: .9;
+}
+
+.main-menu {
+	background: #F7F7F7;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 53px;
+	z-index: 999;
+	overflow: hidden;
+	-webkit-transition: width .2s linear;
+	transition: width .2s linear;
+	-webkit-transform: translateZ(0) scale(1, 1);
+	box-shadow: 1px 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.main-menu li>a {
+	display: flex;
+    align-items: center;
+	width: 200px;
+	height: 65px;
+	padding-left: 15px;
+	border-collapse: collapse;
+	color: #8a8a8a;
+	font-size: 13px;
+	-webkit-transform: translateZ(0) scale(1, 1);
+	-webkit-transition: all .14s linear;
+	transition: all .14s linear;
+}
+
+.main-menu li:hover>a, nav.main-menu li.active>a {
+	background-color: #e3f2fd;
+	height: 65px;
+}
+
+
+
+/* Página Usuario */
+fieldset.sexo {
+	margin-top: -17px;
+	margin-bottom: 7px;
+	border-radius: 10px;
+}
+
+fieldset legend {
+	padding: 0 5px;
+}
+
+.sexoErrors {
+	margin-top: 54px;
+	height: 28px;
+}
+
+.forca {
+	width: 15px;
+	height: 2px;
+	padding: 0 3px;
+	margin-left:3px;
+	border-radius: 5px;
+	background: #eee;
+	float:left;
+}
+
+.helper-text {
+	background: #ff5555;
+	color: white !important;
+	box-shadow: 3px 3px 3px #999;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.inputVisualizar {
+	color: black !important;
+}
+
+.icons-white {
+	color: white;
+}
+
+label.estado {
+	top: -25px;
+	font-size: 11px;
+}
+
+.btn-small {
+	font-weight: bold;
+	color: white !important;
+	margin: 10px 0;
+}
+/* O espaço do menu lateral e a lista de registros */
+.colunaLista {
+	margin-left: 60px !important;
+}
+
+/* Pagina login */
+#username, #password {
+	color: white;
+}
+
+/* Pagina visualizar */
+fieldset {
+  border: 1px solid black;
+  float: left;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+fieldset legend {
+  margin-left: 15px;
+  padding: 0 5px;
+}
+
+.visualizarPerfil {
+	width: 50%;
+}
+
+.visualizacao {
+	width: 40%;
+}
+
+.mensagemStatus {
+	padding: 5px;
+	width: 300px;
+	text-align: center;
+	font-weight: bold;
+	background: green;
+	color: white !important;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #ccc;
+	margin-top:10px;
+} 
+
+.mensagemStatusToken {
+	width: 100% !important
+}
+
+.mensagemStatusRecuperarEmail {
+	margin-bottom: 20px !important;
+}
+
+.iconsRegistroAtivo {
+	color: #4e9a06;
+	font-size: 25px;
+	cursor: context-menu;
+}
+
+.iconsRegistroInativo {
+	color: red;
+	font-size: 25px;
+	cursor: context-menu;
+}
+
+label.erroSelectPerfil {
+	background: #ff5555;
+	width: 79%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: -40px;
+	display: none;
+}
+
+label.erroImagemSelecionada {
+	background: #ff5555;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	display: none;
+}
+
+label.erroGeral {
+	background: #ff5555;
+	width: 60%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin: -10px auto;
+	display: none;
+	text-align: center;
+}	
+
+.id_authority {
+	text-transform: uppercase;
+}
+
+.btnCarregarFoto {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.btnCarregarFoto:hover {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.file-path {
+	color: black !important;
+}
+
+.imagemPerfil {
+	width: 100px;
+	border-radius: 50px;
+}
+
+.imagemPerfilSemFoto {
+	width: 50px;
+}
+
+label.erroSelectPerfil {
+	background: #ff5555;
+	width: 79%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: -40px;
+	display: none;
+}
+
+label.erroImagemSelecionada {
+	background: #ff5555;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	display: none;
+}
+
+label.erroGeral {
+	background: #ff5555;
+	width: 60%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin: -10px auto;
+	display: none;
+	text-align: center;
+}	
+
+.id_authority {
+	text-transform: uppercase;
+}
+
+.btnCarregarFoto {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.btnCarregarFoto:hover {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.file-path {
+	color: black !important;
+}
+
+.imagemPerfil {
+	width: 100px;
+	border-radius: 50px;
+}
+
+.imagemPerfilSemFoto {
+	width: 50px;
+}
+
+.imagemPerfilMenu {
+	width: 40px;
+	border-radius: 50px;
+	margin: 0 8px 0 -10px;
+}
+
+label.erroSelectPerfil {
+	background: #ff5555;
+	width: 79%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: -40px;
+	display: none;
+}
+
+label.erroImagemSelecionada {
+	background: #ff5555;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	display: none;
+}
+
+label.erroGeral {
+	background: #ff5555;
+	width: 60%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin: -10px auto;
+	display: none;
+	text-align: center;
+}	
+
+.id_authority {
+	text-transform: uppercase;
+}
+
+.btnCarregarFoto {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.btnCarregarFoto:hover {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.file-path {
+	color: black !important;
+}
+
+.imagemPerfil {
+	width: 100px;
+	border-radius: 50px;
+}
+
+.imagemPerfilSemFoto {
+	width: 50px;
+}
+
+.imagemPerfilMenu {
+	width: 40px;
+	border-radius: 50px;
+	margin: 0 8px 0 -10px;
+}
+
+.imagemPerfilMenuSemFoto {
+	width: 20px;
+}
+
+.btnAtivar {
+	padding: 0 23px;
+}
+
+.detalhesMenuSemFoto {
+	margin-left: 20px;
+}
+
+.color-white {
+	color: white !important;
+}
+
+.imagemPerfilMenuSemFoto {
+	width: 20px;
+}
+
+.btnAtivar {
+	padding: 0 23px;
+}
+
+.detalhesMenuSemFoto {
+	margin-left: 20px;
+}
+
+.color-white {
+	color: white !important;
+}
+	
+	width: 40px;
+	border-radius: 50px;
+	margin: 0 8px 0 -10px;
+}
+
+.imagemPerfilMenuSemFoto {
+	width: 20px;
+}
+
+.btnAtivar {
+	padding: 0 23px;
+}
+
+.detalhesMenuSemFoto {
+	margin-left: 20px;
+}
+
+.color-white {
+	color: white !important;
+}
+
+.icons-size {
+	font-size: 40px !important;
+}
+
+.divider {
+	width: 500px;
+	border-bottom: 1px solid #ddd !important;
+}
+
+label.erroSelectPerfil {
+	background: #ff5555;
+	width: 79%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: -40px;
+	display: none;
+}
+
+label.erroImagemSelecionada {
+	background: #ff5555;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	display: none;
+}
+
+label.erroGeral {
+	background: #ff5555;
+	width: 60%;
+	height: 27px;
+	color: #fff !important;
+	font-size: 12px;
+	box-shadow: 3px 3px 3px #999;
+	font-weight: bold;
+	padding: 5px;
+	margin: -10px auto;
+	display: none;
+	text-align: center;
+}	
+
+.id_authority {
+	text-transform: uppercase;
+}
+
+.btnCarregarFoto {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.btnCarregarFoto:hover {
+	background: #e3f2fd;
+	color: black !important;
+}
+
+.file-path {
+	color: black !important;
+}
+
+.imagemPerfil {
+	width: 100px;
+	border-radius: 50px;
+}
+
+.imagemPerfilSemFoto {
+	width: 50px;
+}
+
+.imagemPerfilMenu {
+	width: 40px;
+	border-radius: 50px;
+	margin: 0 8px 0 -10px;
+}
+
+.imagemPerfilMenuSemFoto {
+	width: 20px;
+}
+
+.btnAtivar {
+	padding: 0 23px;
+}
+
+.detalhesMenuSemFoto {
+	margin-left: 20px;
+}
+
+.color-white {
+	color: white !important;
+}
+
+.formProduto {
+	width: 50%;
+}
+
+.card-itens {
+	font-size: 35px;
+}
+
+.visualizarPedidoCompra {
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background: black;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/carrossel.js"></script>
+<script src="/js/jquery.mask.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/modalExcluir.js"></script>
+<script src="/js/rodape-voltartopo.js"></script>
+<script src="/js/buscarcep.js"></script>
+<script src="/js/senha.js"></script>
+<script src="/js/addPerfil.js"></script>
