@@ -34,7 +34,7 @@ public class CadastrarSenhaController {
 	protected void init(WebDataBinder binder) {
 		binder.setValidator(validadorCadastrarSenha);
 	}
-	
+	//teste
 	@RequestMapping(value = "/cadastro", method = RequestMethod.GET, name = "novaSenhaUrl")
 	public String formulario(SenhaForm senhaForm) {
 		return "recuperarsenha/cadastro"; 
